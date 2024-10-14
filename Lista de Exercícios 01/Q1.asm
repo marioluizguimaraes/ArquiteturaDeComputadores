@@ -19,3 +19,8 @@ main:	# FaÃ§a um programa para ler um nÃºmero inteiro e imprimir o dobro desse n
 	addi $2, $0, 1
 	add $4, $0, $10
 	syscall
+
+	# Serviço de finalização
+	addi $2, $0, 10
+	syscall
+	 

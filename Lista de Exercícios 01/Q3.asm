@@ -1,6 +1,6 @@
-,.text
+.text
 
-main:	# Fa√ßa um programa para ler um n√∫mero inteiro e imprimir o quadrado desse n√∫mero.
+main:	# Fa√ßa um programa para ler um n√∫mero inteiro e imprimir a multiplicaÁ„o desses dois n˙mero.
 
 	# Ler primeiro n√∫mero
 	addi $2, $0, 5
@@ -18,4 +18,8 @@ main:	# Fa√ßa um programa para ler um n√∫mero inteiro e imprimir o quadrado dess
 	# Imprimir o resutado
 	addi $2, $0, 1
 	add $4, $0, $10
+	syscall
+		
+	# ServiÁo de finalizaÁ„o
+	addi $2, $0, 10
 	syscall
