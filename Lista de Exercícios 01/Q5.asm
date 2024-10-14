@@ -9,11 +9,14 @@ main: #Faça um programa que leia um número inteiro entre 0 e 999 e imprima a s
 	
 	# Separar os digitos
 	addi $8, $0, 10
+	
 	div $9, $8
+	
 	mfhi $10
 	mflo $9
 	
 	div $9, $8
+	
 	mfhi $11
 	mflo $12	
 	
