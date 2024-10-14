@@ -25,3 +25,7 @@ main: #FaÃ§a um programa que leia um nÃºmero inteiro entre 0 e 999 e imprima a s
 	add $4, $0, $14
 	addi $2, $0, 1
 	syscall
+		
+	# Serviço de finalização
+	addi $2, $0, 10
+	syscall
