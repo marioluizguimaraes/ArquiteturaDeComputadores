@@ -1,36 +1,62 @@
 .text
 
-main: 	# Faça um programa que leia um número entre 0 e 9999 e imprima cada algarismo em
-	# uma linha diferente.
-
+main: 	# Serviço de leitura de um inteiro
 	addi $2, $0, 5
 	syscall
 	
-	addi $8, $0 10
+	# Salvando variáveis
+	add $9, $0, $2
+	addi $8, $0, 10
 	
-	div $2, $8
+	# Estraindo o ultimo digito
+	div $9, $8
+	mflo $9
 	mfhi $4
-	mflo $10 
 	
-	addi $2, $0, 1
-	syscall
-	add $4, $0, 'n/'
+	# Serviço de impressão de inteiro
 	addi $2, $0, 1
 	syscall
 	
-	div $10, $8
-	mflo $10 
-	
-	mfhi $4 
-	addi $2, $0, 1
+	# Serviço de impressão de icaractere
+	add $4, $0, '\n'
+	addi $2, $0, 11
 	syscall
 	
-	div $10, $8
-	
+	# Estraindo o ultimo digito
+	div $9, $8
+	mflo $9
 	mfhi $4
+	
+	# Serviço de impressão de inteiro
 	addi $2, $0, 1
 	syscall
 	
-	mflo $4
+	# Serviço de impressão de icaractere
+	add $4, $0, '\n'
+	addi $2, $0, 11
+	syscall
+	
+	# Estraindo o ultimo digito
+	div $9, $8
+	mflo $9
+	mfhi $4
+	
+	# Serviço de impressão de inteiro
 	addi $2, $0, 1
+	syscall
+	
+	# Serviço de impressão de icaractere
+	add $4, $0, '\n'
+	addi $2, $0, 11
+	syscall
+	
+	# Salvando ultimo digito
+	add $4, $0, $9
+	
+	# Serviço de impressão de inteiro
+	addi $2, $0, 1
+	syscall
+	
+	# Serviço de finalização
+	addi $2, $0, 10
 	syscall

@@ -1,8 +1,6 @@
 .text
 
-main:   # Faça um programa para ler um número inteiro e imprimir o quadrado desse número.
-	
-	# Ler entrada externa
+main:   # Ler entrada externa
 	addi $2, $0, 5
 	syscall
 	
@@ -15,5 +13,9 @@ main:   # Faça um programa para ler um número inteiro e imprimir o quadrado de
 	# Imprimir resutado
 	addi $2, $0, 1
 	add $4, $0, $9
+	syscall
+	
+	# Serviço de finalização
+	addi $2, $0, 10
 	syscall
 	

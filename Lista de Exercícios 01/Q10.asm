@@ -1,8 +1,6 @@
 .text
 
-main:	# Faça um programa que leia um caractere minúsculo e imprima o seu equivalente maiúsculo.
-
-	# Serviço de leitura de caractere
+main:	# Serviço de leitura de caractere
 	addi $2, $0, 12
 	syscall
 	

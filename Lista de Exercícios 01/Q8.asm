@@ -1,10 +1,6 @@
 .text
 
-main:	# Faça um programa que leia três números inteiros, representando a duração em horas,
-	# minutos e segundos de um experimento científico e informe essa duração em
-	# segundos.
-	
-	# Serviço de leitura de inteiro
+main:	# Serviço de leitura de inteiro
 	addi $2, $0, 5
 	syscall
 	add $8, $0, $2

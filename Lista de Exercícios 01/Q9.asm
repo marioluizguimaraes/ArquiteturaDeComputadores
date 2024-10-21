@@ -1,10 +1,6 @@
 .text
 
-main:	#Faça um programa que leia um número inteiro, representando a duração em segundos
-	#de um experimento científico e imprima o tempo decorrido nesse experimento no
-	#formato h:m:s.
-	
-	# Divisores de tempo
+main:	# Divisores de tempo
 	addi $8, $0, 60
 	addi $9, $0, 3600
 	

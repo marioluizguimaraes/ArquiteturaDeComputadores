@@ -1,8 +1,6 @@
 .text
 
-main: #FaÃ§a um programa que leia um nÃºmero inteiro entre 0 e 999 e imprima a soma dos algarismos desse nÃºmero. Ex.: 358 gera uma saÃ­da de 16, pois 3+5+8 = 16
-
-	# Lenr entrada externa de um inteiro
+main: 	# Lenr entrada externa de um inteiro
 	addi $2, $0, 5
 	syscall
 	add $9, $0, $2

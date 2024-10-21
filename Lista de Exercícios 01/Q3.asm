@@ -1,8 +1,6 @@
 .text
 
-main:	# FaÃ§a um programa para ler um nÃºmero inteiro e imprimir a multiplicação desses dois número.
-
-	# Ler primeiro nÃºmero
+main:	# Ler primeiro nÃºmero
 	addi $2, $0, 5
 	syscall
 	add $8, $0, $2
@@ -20,6 +18,6 @@ main:	# FaÃ§a um programa para ler um nÃºmero inteiro e imprimir a multiplicação
 	add $4, $0, $10
 	syscall
 		
-	# Serviço de finalização
+	# Serviï¿½o de finalizaï¿½ï¿½o
 	addi $2, $0, 10
 	syscall

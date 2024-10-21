@@ -1,12 +1,11 @@
 .text
 
-main:
-	# Serviço para ler o primeiro número
+main:	# Serviï¿½o para ler o primeiro nï¿½mero
 	addi $2, $0, 5
 	syscall
 	add $8, $0, $2
 	
-	# Serviço para ler o segundo número
+	# Serviï¿½o para ler o segundo nï¿½mero
 	addi $2, $0, 5
 	syscall
 	add $9, $0, $2
@@ -25,14 +24,14 @@ main:
 	# Soma das notas 
 	add $15, $12, $13
 	
-	# Divisão da média
+	# Divisï¿½o da mï¿½dia
 	div $15, $14
 	mflo $4
 	
-	# Serviço de impressão
+	# Serviï¿½o de impressï¿½o
 	addi $2, $0, 1
 	syscall
 	
-	# Serviço de finalização
+	# Serviï¿½o de finalizaï¿½ï¿½o
 	addi $2, $0, 10
 	syscall

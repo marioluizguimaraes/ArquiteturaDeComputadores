@@ -1,8 +1,6 @@
 .text
 
-main:	# FaÃ§a um programa para ler um nÃºmero inteiro e imprimir o dobro desse nÃºmero.
-
-	#Salva o valor 2 no $8
+main:	#Salva o valor 2 no $8
 	addi $8, $0, 2
 	
 	#ler entrada externa
@@ -20,7 +18,7 @@ main:	# FaÃ§a um programa para ler um nÃºmero inteiro e imprimir o dobro desse n
 	add $4, $0, $10
 	syscall
 
-	# Serviço de finalização
+	# Serviï¿½o de finalizaï¿½ï¿½o
 	addi $2, $0, 10
 	syscall
 	 
